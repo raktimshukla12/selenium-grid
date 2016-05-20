@@ -25,7 +25,6 @@ public class Execution {
 		driver.findElement(By.id("login-email")).sendKeys("raktim@gmail.com");
 		driver.findElement(By.id("login-password")).sendKeys("hello");
 		driver.findElement(By.xpath(".//*[@id='pagekey-uno-reg-guest-home']/div[1]/div/form/input[6]")).click();
-		driver.findElement(By.xpath(".//*[@id='pagekey-uno-reg-guest-home']/div[1]/div/form/input[6]")).click();
 		
 	}
 	@AfterTest
