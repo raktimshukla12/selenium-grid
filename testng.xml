@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suite" verbose="1" parallel="tests">
+
+	<test name="Main_Windows_FF" thread-count="1">
+		<parameters>
+			<parameter name="platform" value="windows" />
+			<parameter name="browser" value="firefox" />
+			<parameter name="nodeURl" value="http://192.168.1.96:5555/wd/hub" />
+		</parameters>
+		<classes>
+			<class name="com.webomates.app.testcases.Tools">
+				<methods>
+					<include name="ff_execution" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
