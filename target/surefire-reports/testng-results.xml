@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="suite" duration-ms="11381" started-at="2016-05-12T15:57:28Z" finished-at="2016-05-12T15:57:39Z">
+    <groups>
+    </groups>
+    <test name="Main_Windows_Chrome" duration-ms="455" started-at="2016-05-12T15:57:28Z" finished-at="2016-05-12T15:57:28Z">
+      <class name="com.webomates.app.testcases.Execution">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:0, instance:com.webomates.app.testcases.Execution@3498ed]" name="test" is-config="true" duration-ms="0" started-at="2016-05-12T21:27:28Z" finished-at="2016-05-12T21:27:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://192.168.1.96:5555/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+Command duration or timeout: 199 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'FONNOIDSK92', ip: '192.168.1.21', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+Command duration or timeout: 199 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'FONNOIDSK92', ip: '192.168.1.21', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at com.webomates.app.testcases.Execution.test(Execution.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:645)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$0(ChromeDriverService.java:1)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:138)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:103)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance(DefaultDriverProvider.java:97)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:60)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:222)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="SKIP" signature="chrome_execution()[pri:0, instance:com.webomates.app.testcases.Execution@3498ed]" name="chrome_execution" duration-ms="0" started-at="2016-05-12T21:27:28Z" finished-at="2016-05-12T21:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chrome_execution -->
+        <test-method status="SKIP" signature="close()[pri:0, instance:com.webomates.app.testcases.Execution@3498ed]" name="close" is-config="true" duration-ms="0" started-at="2016-05-12T21:27:28Z" finished-at="2016-05-12T21:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.webomates.app.testcases.Execution -->
+    </test> <!-- Main_Windows_Chrome -->
+    <test name="Main_Windows_FF" duration-ms="11381" started-at="2016-05-12T15:57:28Z" finished-at="2016-05-12T15:57:39Z">
+      <class name="com.webomates.app.testcases.Tools">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:com.webomates.app.testcases.Tools@1a25848]" name="test" is-config="true" duration-ms="3650" started-at="2016-05-12T21:27:28Z" finished-at="2016-05-12T21:27:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://192.168.1.96:5555/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="ff_execution()[pri:0, instance:com.webomates.app.testcases.Tools@1a25848]" name="ff_execution" duration-ms="7469" started-at="2016-05-12T21:27:32Z" finished-at="2016-05-12T21:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ff_execution -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.webomates.app.testcases.Tools@1a25848]" name="close" is-config="true" duration-ms="260" started-at="2016-05-12T21:27:39Z" finished-at="2016-05-12T21:27:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.webomates.app.testcases.Tools -->
+    </test> <!-- Main_Windows_FF -->
+  </suite> <!-- suite -->
+</testng-results>
